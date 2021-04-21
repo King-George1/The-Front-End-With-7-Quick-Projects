@@ -1,0 +1,16 @@
+.content .item{
+    margin-top: 10px;
+}
+
+h1, h4{
+    width: 100%;
+}
+#newItem{
+    width: 40%;
+    margin: 0px auto;
+    /* background-color: red; */
+}
+input{
+    height: 36px;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html ng-app="RankingLeadersApp">
+<head>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" >
+    <link rel="stylesheet" href="style.css">
+    <title>Gold, Silver and Bronze</title>
+
+</head>
+<body ng-controller="RankController">
+    <div class="container">
+    <h1>Example #5 With Angular Mikey</h1>
+    <div class="top-area gold" ng-click="toggleGold()">
+        <h4>Gold Tier</h4><hr>
+        <button class="btn-lg btn-danger" ng-show="showGold">X</button>
+        <button class="btn-lg btn-success" ng-hide="showGold">Show</button>
+    </div>
+
+    <div class="top-area silver" ng-click="toggleSilver()">
+        <h4>Silver Tier</h4><hr>
+        <button class="btn-lg btn-danger" ng-show="showSilver">X</button>
+        <button class="btn-lg btn-success" ng-hide="showSilver">Show</button>
+    </div>
+
+    <div class="top-area bronze" ng-click="toggleBronze()">
+        <h4>Bronze Tier</h4><hr>
+        <button class="btn-lg btn-danger" ng-show="showBronze">X</button>
+        <button class="btn-lg btn-success" ng-hide="showBronze">Show</button>
+    </div>
+
+
+    <div class="bottom-area gold" ng-show="showGold">Gold
+        <span ng-repeat="leader in Leaders" ng-show="leader.rank == 1">
+            <img src="{{leader.pic}}"></span>
+    </div>
+
+    <div class="bottom-area silver" ng-show="showSilver">Silver
+        <span ng-repeat="leader in Leaders" ng-show="leader.rank == 2">
+            <img src="{{leader.pic}}"></span>
+    </div>
+
+    <div class="bottom-area bronze" ng-show="showBronze">Bronze
+        <span ng-repeat="leader in Leaders" ng-show="leader.rank == 3">
+            <img src="{{leader.pic}}"></span>
+    </div>
+
+
+
+</div>
+
+</body>
+</html>

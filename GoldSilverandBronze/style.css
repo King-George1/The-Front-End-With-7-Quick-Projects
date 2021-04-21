@@ -1,0 +1,77 @@
+* {
+    padding: 3px;
+    text-align: center;
+    border-radius: 20px;
+  }
+.gold {
+    background-color: gold;
+  }
+  .silver {
+    background-color: silver;
+  }
+  .bronze {
+    background-color: #b08d57;
+  }
+
+  .top-area{
+    opacity: 0.8;
+    border: 5px ridge black;
+  }
+
+  .bottom-area{
+    float: left;
+    width: 100%;
+    margin: 10px 0px;
+    border: 10px double black;
+    font-size: 30px;
+  }
+
+  .bottom-area:hover{
+    opacity: 0.6;
+    border: 10px ridge black;
+  }
+
+  button:hover{
+    border: 5px ridge black;
+  }
+
+  img{
+    width: 100px;
+  }
+
+  img:hover{
+    border: 5px ridge white;
+  }
+
+body{
+    width: 60%;
+    margin: 0 auto;
+}
+
+h1{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+span > img{
+    width: 180px;
+    height: 200px;
+    text-align: center;
+}
+
+
+  .top-area {
+    width: 30%;
+    height: 150px;
+    float: left;
+    margin: 10px 5px;
+    border-radius: 30px;
+  }
+
+  .bottom-area {
+    width: 100%;
+    margin: 0 auto;
+    border: 10px double black;
+    font-size: 30px;
+  }
